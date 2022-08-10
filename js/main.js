@@ -286,13 +286,3 @@ function respuestaClick2() {
   modificarOpcion();
   desactivarBtn();
 }
-
-//Saldo inicial 
-let saldoCajaAhorro = 123343.56;
-//Funcion que recibe un deposito y devuelve el saldo de caja de ahorro actualizado
-function depositarCajaAhorro(saldo, deposito){
-  saldo = saldoCajaAhorro + deposito;
-  console.log(saldo);
-}
-
-depositarCajaAhorro(123343.56, 12500);
