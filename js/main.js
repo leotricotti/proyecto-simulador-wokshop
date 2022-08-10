@@ -59,7 +59,7 @@ const extracc1 = new Operacion(
   "15:55",
   "Extraccion",
   "$ 15.000.00",
-  "$ 125.343.00"
+  "$ 125.343.54"
 );
 const extracc2 = new Operacion(
   "03/07/2022",
@@ -95,7 +95,7 @@ const trans3 = new Operacion(
   "12:18",
   "Transferencias",
   "$ 20.000.00",
-  "$ 123.343.00"
+  "$ 123.343.56"
 );
 //Creacion del array de objetos que va a contener a las operaciones bancarias previamente simuladas
 const operaciones = [];
@@ -130,21 +130,21 @@ const cuentas = [
     moneda: "$",
     cuenta: "5069-5689756/4",
     identificador: "Cuenta",
-    saldo: "$ 100.000,00",
+    saldo: "$ 123.343,56"
   },
   {
     tipo: "Cta Corriente",
     moneda: "$",
     cuenta: "5069-5689652/4",
     identificador: "Cuenta",
-    saldo: "$ 200.000,00",
+    saldo: "$ 200.000,00"
   },
   {
     tipo: "Caja de Ahorro",
     moneda: "USD",
     cuenta: "5069-5685686/4",
     identificador: "Cuenta",
-    saldo: "USD 5.000,00",
+    saldo: "USD 5.000,00"
   },
 ];
 //Funcion que al consultar el saldo devuelve una tabla con el saldo de las cuentas bancarias simuladas
@@ -286,3 +286,13 @@ function respuestaClick2() {
   modificarOpcion();
   desactivarBtn();
 }
+
+//Saldo inicial 
+let saldoCajaAhorro = 123343.56;
+//Funcion que recibe un deposito y devuelve el saldo de caja de ahorro actualizado
+function depositarCajaAhorro(saldo, deposito){
+  saldo = saldoCajaAhorro + deposito;
+  console.log(saldo);
+}
+
+depositarCajaAhorro(123343.56, 12500);
