@@ -17,6 +17,11 @@ a {
   text-decoration: none;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
 /* Font */
 
 @font-face {
@@ -97,6 +102,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 1.5;
+}
+
+.depositos-input {
+  width: 35%;
+  color: #002856;
+  font-family: heading;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 3px;
+  text-align: right;
 }
 
 .table {
@@ -256,6 +271,10 @@ div::after {
     margin: 1.5rem 3rem 0 3rem;
   }
 
+  .depositos-input {
+    width: 25%;
+  }
+
   .cajero-container {
     margin: 0 3rem 2rem 3rem;
   }
@@ -289,20 +308,24 @@ div::after {
     font-weight: 600;
     background-color: #304d75;
   }
+  
+  .depositos-input {
+    width: 20%;
+  }
+
 }
 
 @media (min-width: 62rem) {
   .teclado-container {
     display: flex;
     justify-content: space-between;
-    margin: 0 2rem 0 1rem;
+    margin: 0 2rem 0 2rem;
   }
+
   #depositos-input {
-    color: #304d75;
-    font-family: heading;
-    font-size: 1.2;
-    font-weight: 700;
+    width: 10%;
   }
+
 }
 
 @media (min-width: 75rem) {
