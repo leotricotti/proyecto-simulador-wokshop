@@ -45,3 +45,6 @@ class Deposito{
   }
 }
 
+let depositoInput = document.getElementById("depositos-text");
+depositoInput.className = "input-group";
+depositoInput.innerHTML = '<p class="text">Ingrese el monto que desea depositar $: <input type="number" id="depositos-input"></input></p>';

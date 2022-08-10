@@ -1,252 +1,4 @@
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
-  display: none;
-}
-
-/* Height */
-
-html {
-  height: 100%;
-}
-
-body {
-  max-height: 100%;
-}
-
 /* Reset */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -283,7 +35,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template: "header" 6rem "heading""main""footer""bottom" / 1fr;
+  grid-template: "header" 6rem "heading" "main" "footer" "bottom" / 1fr;
 }
 
 /* Header */
@@ -336,7 +88,7 @@ body {
 
 .text {
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
   font-family: heading;
   font-size: 1.25rem;
   font-weight: bold;
@@ -351,17 +103,19 @@ body {
   font-family: heading;
   text-transform: uppercase;
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
   margin-bottom: 5rem;
 }
 
-.table th, td {
+.table th,
+td {
   text-align: center;
 }
 
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
   background-color: #fff;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .btn-derecha,
@@ -372,13 +126,13 @@ body {
   position: relative;
   z-index: 0;
   margin: 1.25rem 2rem 1.25rem 2rem;
-  transition: all .5 ease-in;
+  transition: all 0.5 ease-in;
 }
 
 div.btn-izquierda::before {
   right: -25px;
   border-width: 25px 25px 25px 0;
-  transform: rotateY(180deg)
+  transform: rotateY(180deg);
 }
 
 div.btn-derecha::before {
@@ -395,7 +149,7 @@ div.btn-izquierda::before {
 
 div::before,
 div::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 0;
   width: 0;
@@ -444,7 +198,7 @@ div::after {
 }
 
 .btn-disable {
-  opacity: .65;
+  opacity: 0.65;
   pointer-events: none;
 }
 
@@ -489,7 +243,6 @@ div::after {
 /* Media Query */
 
 @media (min-width: 36rem) {
-
   br {
     display: none;
   }
@@ -513,7 +266,6 @@ div::after {
 }
 
 @media (min-width: 48rem) {
-
   br {
     display: none;
   }
@@ -530,26 +282,27 @@ div::after {
   .cajero-container {
     margin: 0 5rem 3.5rem 5rem;
   }
-  
-  .teclado-container {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  .teclado-izquierda {
-    padding-right: 2rem;
-  
+  .form-control {
+    color:  #fff;
+    font-family: heading;
+    font-weight: 600;
+    background-color: #304d75;
   }
 }
 
 @media (min-width: 62rem) {
-
   .teclado-container {
     display: flex;
     justify-content: space-between;
-    margin: 0 5rem;
+    margin: 0 2rem 0 1rem;
   }
-
+  #depositos-input {
+    color: #304d75;
+    font-family: heading;
+    font-size: 1.2;
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 75rem) {
@@ -561,7 +314,5 @@ div::after {
   .heading-container {
     width: 90%;
     max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
