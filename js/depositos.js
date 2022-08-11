@@ -35,12 +35,20 @@ capturar.onclick = () => {
   let tipoOperacion = "Depósito";
 
   //Codigo que captura la informacion sobre la operacion provista por el usuario y la devuelve en formato peso argentino
-  let dineroDepositado = document.getElementById("depositos-input").value;
-  // console.log(dineroDepositado);
+  let depositado = document.getElementById("depositos-input").value;
+  //Codigo que parsea el numero ingresado por el usuario
+  let dineroDepositado = parseInt(depositado);
+  //Codigo que convierte a pesos el dato parseado
+  let numeroADinero = numeroAPesos(depositado); 
 
+  //Codigo que actualiza el saldo de la caja de ahorro simulada
   saldoCajaAhorro = dineroDepositado + saldoCajaAhorro;
+  //Codigo que convierte a pesos el saldo simulado
+  let saldoADinero = numeroAPesos(saldoCajaAhorro);
 
-  
+
+  const nuevoDeposito = new Deposito (diaDeposito, horaDeposito, tipoOperacion, numeroADinero, saldoADinero);
+  console.table(nuevoDeposito);
 
 }
 
