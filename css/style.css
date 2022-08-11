@@ -17,9 +17,9 @@ a {
   text-decoration: none;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 /* Font */
@@ -40,7 +40,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template: "header" 6rem "heading" "main" "footer" "bottom" / 1fr;
+  grid-template: "header" 6rem "heading""main""footer""bottom" / 1fr;
 }
 
 /* Header */
@@ -104,8 +104,9 @@ body {
   line-height: 1.5;
 }
 
-.depositos-input {
+#depositos-input {
   width: 35%;
+  height: 2rem;
   color: #002856;
   font-family: heading;
   font-size: 1.25rem;
@@ -271,7 +272,7 @@ div::after {
     margin: 1.5rem 3rem 0 3rem;
   }
 
-  .depositos-input {
+  #depositos-input {
     width: 25%;
   }
 
@@ -303,13 +304,13 @@ div::after {
   }
 
   .form-control {
-    color:  #fff;
+    color: #fff;
     font-family: heading;
     font-weight: 600;
     background-color: #304d75;
   }
-  
-  .depositos-input {
+
+  #depositos-input {
     width: 20%;
   }
 
@@ -325,7 +326,6 @@ div::after {
   #depositos-input {
     width: 10%;
   }
-
 }
 
 @media (min-width: 75rem) {

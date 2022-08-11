@@ -36,7 +36,8 @@
       <!-- Main -->
       <main class="cajero-container">
         <div class="text-container">
-          <p class="text">Ingrese el importe que desea depositar: $ <input type="number" class="depositos-input"></p>
+          
+          <p class="text">Ingrese el importe que desea depositar: $ <input type="number" id="depositos-input"> </p>
         </div>
         <section class="teclado-container">
           <div class="teclado-izquierda">
@@ -81,9 +82,9 @@
                   <div class="btn-derecha"></div>
                 </a>
               </li>
-              <li class="teclas-derecha">
+              <li class="teclas-derecha" id="depositos-submit">
                 <p>Aceptar -- &gt;&gt;</p>
-                <a href="depositos-final.html" class="link">
+                <a href="" class="link">
                   <div class="btn-derecha"></div>
                 </a>
               </li>
@@ -106,6 +107,7 @@
     </div>
 
     <!-- JS -->
+    <script src="../../js/datos.js"></script>
     <script src="../../js/depositos.js"></script>
   </body>
 </html>
