@@ -8,10 +8,9 @@ function numeroAPesos(dinero) {
     currency: "ARS",
   }).format(dinero));
 }
-  //Clase que toma  parametros del ordenador y del usuario y crea un objeto donde se guarda dicha informacion
-
+//Variable que almacena la informacion provista por el usuario
 let capturar = document.getElementById("depositos-submit");
-
+//Funcion que captura la informacion brindada por el usuario y la convierte en un objeto
 capturar.onclick = () => {  
   // console.log("1");
   class Deposito{
@@ -25,34 +24,29 @@ capturar.onclick = () => {
   }
   //Codigo que captura la fecha en que se realiza la operación
   let diaDeposito = new Date().toLocaleDateString();  
-  // console.log(diaDeposito);
-
   //Codigo que captura la hora en que se realiza la operacion
   let horaDeposito = new Date().toLocaleTimeString();
-  // console.log(horaDeposito)
-  
-  //Codigo que muestra el tipo de operacion
+  //Codigo que informa el tipo de operacion
   let tipoOperacion = "Depósito";
-
   //Codigo que captura la informacion sobre la operacion provista por el usuario y la devuelve en formato peso argentino
   let depositado = document.getElementById("depositos-input").value;
   //Codigo que parsea el numero ingresado por el usuario
   let dineroDepositado = parseInt(depositado);
   //Codigo que convierte a pesos el dato parseado
   let numeroADinero = numeroAPesos(depositado); 
-
   //Codigo que actualiza el saldo de la caja de ahorro simulada
   saldoCajaAhorro = dineroDepositado + saldoCajaAhorro;
   //Codigo que convierte a pesos el saldo simulado
   let saldoADinero = numeroAPesos(saldoCajaAhorro);
 
-
-  const nuevoDeposito = new Deposito (diaDeposito, horaDeposito, tipoOperacion, numeroADinero, saldoADinero);
-  console.table(nuevoDeposito);
-
+  nuevoDeposito = new Deposito (diaDeposito, horaDeposito, tipoOperacion, numeroADinero, saldoADinero);
+  agreagrDeposito();
 }
 
-
+agreagrDeposito = () => {
+  operaciones.push(nuevoDeposito);
+  console.table(operaciones);
+}
 
 
 
